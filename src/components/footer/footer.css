@@ -1,0 +1,70 @@
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #444444;
+  color: white;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.footer-wrapper p {
+  width: 100%;
+  padding: 40px 3vh;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+.footer-wrapper p .marker {
+  color: #a57eff;
+  font-weight: 500;
+}
+
+.footer-wrapper .footer-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.footer-wrapper .footer-contact::after {
+  content: "";
+  width: 100%;
+  top: 0;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(120, 189, 253, 0.75)), to(rgba(179, 120, 255, 0.75)));
+  background: linear-gradient(to right, rgba(120, 189, 253, 0.75), rgba(179, 120, 255, 0.75));
+  position: absolute;
+}
+
+.footer-wrapper .footer-contact span:nth-child(1) {
+  margin: 20px 20px 0 0;
+}
+
+.footer-wrapper .footer-contact span:nth-child(2) {
+  margin: 20px 0px 0 20px;
+}
+/*# sourceMappingURL=footer.css.map */

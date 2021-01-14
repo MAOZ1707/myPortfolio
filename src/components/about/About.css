@@ -1,0 +1,49 @@
+.about-wrapper {
+  padding: 40px 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f3f3f3;
+  color: #363636;
+  position: relative;
+}
+
+.about-wrapper .about-title {
+  width: 100%;
+  margin: 0;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  line-height: 19px;
+  margin: 20px 0;
+  grid-column: 1/-1;
+  text-align: center;
+  font-size: 1.6em;
+  color: darkgray;
+  font-weight: 600;
+}
+
+.about-wrapper p {
+  width: 100%;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  font-size: 1rem;
+  grid-column: 1/-1;
+  font-weight: 400;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  text-align: start;
+  margin: 5px 0;
+}
+
+.about-wrapper p .marker {
+  color: #844fff;
+  font-weight: 800;
+}
+/*# sourceMappingURL=About.css.map */

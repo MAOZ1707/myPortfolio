@@ -1,0 +1,220 @@
+.skills-wrapper {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f3f3f3;
+  color: #363636;
+  position: relative;
+}
+
+.skills-title {
+  width: 100%;
+  margin: 0;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  line-height: 19px;
+  margin: 20px 0;
+  grid-column: 1/-1;
+  text-align: center;
+  font-size: 1.6em;
+  color: darkgray;
+  font-weight: 600;
+  position: relative;
+}
+
+.skills-title::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  z-index: 0;
+  height: 2px;
+  top: -10px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(49, 150, 245, 0.75)), to(rgba(164, 95, 255, 0.75)));
+  background: linear-gradient(to right, rgba(49, 150, 245, 0.75), rgba(164, 95, 255, 0.75));
+}
+
+.skills-container {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skills-container .icons-front {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.skills-container h3 {
+  font-size: 1.1em;
+  font-weight: 600;
+  position: relative;
+  text-align: center;
+  color: #353535;
+  margin: 20px 0;
+}
+
+.skills-container i {
+  font-size: 2em;
+  margin: 20px 40px;
+}
+
+.skills-container .html {
+  color: #ff9239;
+}
+
+.skills-container .css {
+  color: #44a5ff;
+}
+
+.skills-container .javascript {
+  color: #f0e32d;
+}
+
+.skills-container .react {
+  color: #5cb6ff;
+}
+
+.skills-container .sass {
+  color: #ff2b9f;
+}
+
+.skills-container .icons-back {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.skills-container .icons-back section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skills-container .icons-back i {
+  color: #33c446;
+}
+
+.skills-container .icons-back span {
+  font-size: 1.1em;
+}
+
+.skills-container .icons-back p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.skills-container .icons-design {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
+}
+
+.skills-container .icons-design img {
+  width: 2.5rem;
+  margin: 0px 10px 20px 20px;
+  height: 2.5rem;
+}
+
+.skills-container .icons-design .indesign {
+  background-color: #e7264d;
+}
+
+.skills-container .icons-design .illustrator {
+  background-color: #f87d35;
+}
+
+.skills-container .icons-design .photoshop {
+  background-color: #3fa7fc;
+}
+
+.skills-container .icons-design i {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  margin: 0 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 5px solid #b34ec7;
+  color: #b34ec7;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.4em;
+}
+
+@media (min-width: 900px) {
+  .icons-back {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+}
+/*# sourceMappingURL=skills.css.map */

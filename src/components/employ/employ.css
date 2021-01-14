@@ -1,0 +1,113 @@
+.employ-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f3f3f3;
+  color: #363636;
+  position: relative;
+}
+
+.employ-wrapper .employ-title {
+  width: 100%;
+  margin: 0 0 20px 0;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  grid-column: 1/-1;
+  text-align: center;
+  font-size: 1.6em;
+  color: darkgray;
+  font-weight: 600;
+}
+
+.employ-wrapper .employ-title::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  z-index: 0;
+  height: 2px;
+  top: -10px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(49, 150, 245, 0.75)), to(rgba(164, 95, 255, 0.75)));
+  background: linear-gradient(to right, rgba(49, 150, 245, 0.75), rgba(164, 95, 255, 0.75));
+}
+
+.employ-wrapper .jobs-container {
+  margin: 0px 0px 60px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0 15px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+
+.employ-wrapper .jobs-container .job-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.employ-wrapper .jobs-container .job-info .job-years {
+  font-size: 1rem;
+  padding-bottom: 10px;
+  position: relative;
+  color: darkgray;
+}
+
+.employ-wrapper .jobs-container .job-info .job-years::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(164, 95, 255, 0.75)), to(rgba(49, 150, 245, 0.75)));
+  background: linear-gradient(to right, rgba(164, 95, 255, 0.75), rgba(49, 150, 245, 0.75));
+  bottom: 8px;
+}
+
+.employ-wrapper .jobs-container .job-info .job-name {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.employ-wrapper .jobs-container .job-description {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  font-size: 1rem;
+  padding: 0 0 0 27px;
+  text-align: start;
+}
+/*# sourceMappingURL=employ.css.map */

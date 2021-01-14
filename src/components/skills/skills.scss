@@ -1,0 +1,146 @@
+.skills-wrapper {
+	height: auto;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(243, 243, 243);
+	color: rgb(54, 54, 54);
+	position: relative;
+}
+
+.skills-title {
+	width: 100%;
+	margin: 0;
+	grid-row: 1;
+	line-height: 19px;
+	margin: 20px 0;
+	grid-column: 1/-1;
+	text-align: center;
+	font-size: 1.6em;
+	color: darkgray;
+	font-weight: 600;
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 80%;
+		z-index: 0;
+		height: 2px;
+
+		top: -10px;
+		left: 50%;
+		transform: translate(-50%);
+		background: linear-gradient(to right, rgba(49, 150, 245, 0.75), rgba(164, 95, 255, 0.75));
+	}
+}
+.skills-container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+
+	.icons-front {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-direction: row;
+	}
+
+	h3 {
+		font-size: 1.1em;
+		font-weight: 600;
+		position: relative;
+		text-align: center;
+		color: rgb(53, 53, 53);
+		margin: 20px 0;
+	}
+
+	i {
+		font-size: 2em;
+		margin: 20px 40px;
+	}
+
+	.html {
+		color: rgb(255, 146, 57);
+	}
+	.css {
+		color: rgb(68, 165, 255);
+	}
+	.javascript {
+		color: rgb(240, 227, 45);
+	}
+	.react {
+		color: rgb(92, 182, 255);
+	}
+	.sass {
+		color: rgb(255, 43, 159);
+	}
+
+	.icons-back {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		flex-direction: column;
+		margin-bottom: 20px;
+		section {
+			flex: 1;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+		i {
+			color: rgb(51, 196, 70);
+		}
+		span {
+			font-size: 1.1em;
+		}
+		p {
+			margin-top: 10px;
+			text-align: center;
+			font-size: 1.1em;
+		}
+	}
+	.icons-design {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: center;
+		margin: 20px 0;
+		img {
+			width: 2.5rem;
+			margin: 0px 10px 20px 20px;
+			height: 2.5rem;
+		}
+		.indesign {
+			background-color: rgb(231, 38, 77);
+		}
+		.illustrator {
+			background-color: rgb(248, 125, 53);
+		}
+		.photoshop {
+			background-color: rgb(63, 167, 252);
+		}
+		i {
+			background-color: rgb(0, 0, 0);
+			display: flex;
+			align-items: center;
+			margin: 0;
+			margin: 0 20px;
+			justify-content: center;
+			border: 5px solid #b34ec7;
+			color: #b34ec7;
+			width: 2.5rem;
+			height: 2.5rem;
+			font-size: 1.4em;
+		}
+	}
+}
+@media (min-width: 900px) {
+	.icons-back {
+		flex-direction: row !important;
+	}
+}
